@@ -5,14 +5,18 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    int days = 30;
-    String authorName = "Rahul Mondal";
+    const int days = 30;
+    const String authorName = "Rahul Mondal";
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("Catalog App"),
       ),
-      body: Center(
-        child: Text("Welcome to $days days of flutter by $authorName"),
+      body: const Center(
+        child: Text(
+          "Welcome to $days days of Flutter by $authorName",
+          style: TextStyle(fontSize: 18),
+        ),
       ),
       drawer: const Drawer(),
     );
